@@ -20,7 +20,31 @@
 }
 
 body {
-  background: var(--background);
+  background-color: #000000;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -10;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(circle at center, black 0%, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at center, black 0%, transparent 80%);
+  pointer-events: none;
+}
+
+::selection {
+  background-color: #4a90d9;
+  color: #ffffff;
 }
