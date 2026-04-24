@@ -1,4 +1,6 @@
 // components/Footer.jsx
+import Image from 'next/image';
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -6,10 +8,19 @@ export default function Footer() {
     <footer className="border-t border-[#2a2a2a] py-8 text-[#888] text-sm mt-auto">
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col md:flex-row justify-between items-center gap-4">
         
-        {/* Copyright */}
-        <p>
-          © {currentYear} Mateo Yunga. All rights reserved.
-        </p>
+        {/* Logo & Copyright */}
+        <div className="flex items-center gap-4">
+          <Image 
+            src="/img/logo.png" 
+            alt="Logo Mateo"
+            width={32} 
+            height={32} 
+            className="object-contain"
+          />
+          <p>
+            © {currentYear} Mateo Yunga. All rights reserved.
+          </p>
+        </div>
 
         {/* Links Rápidos */}
         <div className="flex gap-6 font-medium">

@@ -6,20 +6,20 @@ import Footer from '@/components/Footer';
 export default function Home() {
   return (
    
-    <div className="min-h-screen text-white" style={{ fontFamily: 'Inter, sans-serif' }}>
+    <div className="flex flex-col min-h-screen text-white" style={{ fontFamily: 'Inter, sans-serif' }}>
 
       {/* NAV */}
       <Navbar />
 
       {/* MAIN CONTENT */}
-      <div className="pt-16 min-h-screen flex items-center">
+      <main className="flex-1 flex items-center pt-24 pb-16 md:pt-32 md:pb-24">
         <div className="w-full px-6 md:px-12">
           <div className="max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
               {/* LEFT SECTION */}
               <div className="flex flex-col justify-center -translate-y-6 md:-translate-y-8">
-                <div className="mb-6 md:mb-8">
+                {/* <div className="mb-6 md:mb-8">
                   <Image
                     src="/img/logo.png" 
                     alt="Logo Mateo"
@@ -27,7 +27,7 @@ export default function Home() {
                     height={64} 
                     className="object-contain"
                   />
-                </div>
+                </div> */}
                 <div className="w-12 md:w-14 h-1 bg-white mb-8 md:mb-10" />
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 md:mb-8">
                   I'm Mateo,<br /><span className="text-[#4a90d9]">a Software</span><br />Engineer
@@ -127,7 +127,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </main>
       <Footer />
     </div>
   );
