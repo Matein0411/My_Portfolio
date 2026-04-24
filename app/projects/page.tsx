@@ -1,7 +1,8 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import Navbar from '@/components/Navbar';
 
 export default function Projects() {
+
   const projects = [
     {
       title: 'Byte_Click',
@@ -36,21 +37,9 @@ export default function Projects() {
 
   return (
     <div className="min-h-screen text-white">
+    
       {/* NAV */}
-      <nav className="fixed top-0 w-full bg-[#0a0a0a]/80 backdrop-blur-sm border-b border-[#1a1a1a] z-50">
-        <div className="flex items-center justify-between px-8 md:px-12 py-5">
-          <div className="flex items-center gap-3">
-            <span className="text-[#4a90d9] font-bold font-mono text-xl">&lt;/&gt;</span>
-            <span className="text-base md:text-lg font-bold">Mateo Yunga</span>
-          </div>
-          <ul className="hidden lg:flex gap-10 list-none">
-            <li><Link href="/" className="text-base font-medium text-[#999] hover:text-white transition no-underline">Home</Link></li>
-            <li><Link href="/about" className="text-base font-medium text-[#999] hover:text-white transition no-underline">About</Link></li>
-            <li><Link href="/projects" className="text-base font-medium text-[#999] hover:text-white transition no-underline">Projects</Link></li>
-          </ul>
-        </div>
-      </nav>
-
+      <Navbar />
       {/* PROJECTS CONTENT */}
       <div className="pt-24 min-h-screen px-6 md:px-12">
         <div className="max-w-6xl mx-auto mt-12">

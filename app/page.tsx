@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   return (
@@ -7,24 +8,7 @@ export default function Home() {
     <div className="min-h-screen text-white" style={{ fontFamily: 'Inter, sans-serif' }}>
 
       {/* NAV */}
-      <nav className="fixed top-0 w-full bg-[#0a0a0a]/80 backdrop-blur-sm border-b border-[#1a1a1a] z-50">
-        <div className="flex items-center justify-between px-8 md:px-12 py-5">
-          <div className="flex items-center gap-3">
-            <span className="text-[#4a90d9] font-bold font-mono text-xl">&lt;/&gt;</span>
-            <span className="text-base md:text-lg font-bold">Mateo Yunga</span>
-          </div>
-          <ul className="hidden lg:flex gap-10 list-none">
-            <li><a href="/" className="text-base font-medium text-[#999] hover:text-white transition no-underline">Home</a></li>
-            <li><a href="/about" className="text-base font-medium text-[#999] hover:text-white transition no-underline">About</a></li>
-            <li><a href="/projects" className="text-base font-medium text-[#999] hover:text-white transition no-underline">Projects</a></li>
-          </ul>
-          <button className="lg:hidden flex flex-col gap-1.5">
-            <span className="w-5 h-0.5 bg-white block" />
-            <span className="w-5 h-0.5 bg-white block" />
-            <span className="w-5 h-0.5 bg-white block" />
-          </button>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* MAIN CONTENT */}
       <div className="pt-16 min-h-screen flex items-center">

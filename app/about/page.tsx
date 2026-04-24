@@ -1,23 +1,11 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import Navbar from '@/components/Navbar';
 
 export default function About() {
   return (
     <div className="min-h-screen text-white">
       {/* NAV */}
-      <nav className="fixed top-0 w-full bg-[#0a0a0a]/80 backdrop-blur-sm border-b border-[#1a1a1a] z-50">
-        <div className="flex items-center justify-between px-8 md:px-12 py-5">
-          <div className="flex items-center gap-3">
-            <span className="text-[#4a90d9] font-bold font-mono text-xl">&lt;/&gt;</span>
-            <span className="text-base md:text-lg font-bold">Mateo Yunga</span>
-          </div>
-          <ul className="hidden lg:flex gap-10 list-none">
-            <li><Link href="/" className="text-base font-medium text-[#999] hover:text-white transition no-underline">Home</Link></li>
-            <li><Link href="/about" className="text-base font-medium text-[#999] hover:text-white transition no-underline">About</Link></li>
-            <li><Link href="/projects" className="text-base font-medium text-[#999] hover:text-white transition no-underline">Projects</Link></li>
-          </ul>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* ABOUT CONTENT */}
       <div className="pt-24 pb-20 px-6 md:px-12 flex flex-col items-center">
@@ -29,12 +17,7 @@ export default function About() {
             <div className="bg-[#1a1a1a] border border-[#2a2a2a] rounded-xl p-8 shadow-xl">
               <div className="flex flex-col md:flex-row gap-10 items-center md:items-start">
                 <div className="w-48 h-48 relative rounded-full overflow-hidden bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] shrink-0 border-2 border-[#2a2a2a] shadow-lg">
-                  <Image
-                    src="/img/mateo_animated.png"
-                    alt="Profile"
-                    fill
-                    className="object-contain p-2"
-                  />
+                    <Image src="/img/mateo_animated.png" alt="Profile" fill sizes="192px" className="object-contain p-2" />
                 </div>
                 <div className="flex-1">
                   <h2 className="text-2xl font-bold mb-4 text-[#4a90d9]">Hi, I'm Mateo</h2>
