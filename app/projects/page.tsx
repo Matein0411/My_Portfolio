@@ -36,7 +36,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="min-h-screen text-white">
+    <div className="min-h-screen text-white" style={{ fontFamily: 'Inter, sans-serif' }}>
     
       {/* NAV */}
       <Navbar />
