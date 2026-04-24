@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
@@ -17,10 +18,19 @@ export default function Home() {
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
               {/* LEFT SECTION */}
-              <div className="flex flex-col justify-center">
+              <div className="flex flex-col justify-center -translate-y-6 md:-translate-y-8">
+                <div className="mb-6 md:mb-8">
+                  <Image
+                    src="/img/logo.png" 
+                    alt="Logo Mateo"
+                    width={64} 
+                    height={64} 
+                    className="object-contain"
+                  />
+                </div>
                 <div className="w-12 md:w-14 h-1 bg-white mb-8 md:mb-10" />
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 md:mb-8">
-                  I'm Mateo,<br />a Software<br />Engineer
+                  I'm Mateo,<br /><span className="text-[#4a90d9]">a Software</span><br />Engineer
                 </h1>
                 <p className="text-[#888] text-sm md:text-base leading-relaxed max-w-md mb-10 md:mb-14">
                   I'm a Software Engineering student with practical experience in data analysis, Machine Learning, and software architecture.
@@ -118,6 +128,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

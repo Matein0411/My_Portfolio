@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 export default function Projects() {
 
@@ -41,7 +42,7 @@ export default function Projects() {
       {/* NAV */}
       <Navbar />
       {/* PROJECTS CONTENT */}
-      <div className="pt-24 min-h-screen px-6 md:px-12">
+      <div className="flex-grow pt-24 pb-24 px-6 md:px-12">
         <div className="max-w-6xl mx-auto mt-12">
           <h1 className="text-4xl md:text-5xl font-black mb-4 text-center">My Projects</h1>
           <p className="text-[#888] text-center mb-12 max-w-2xl mx-auto">
@@ -96,6 +97,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

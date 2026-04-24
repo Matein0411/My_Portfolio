@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -17,9 +18,17 @@ export default function Navbar() {
     <nav className="fixed top-0 w-full bg-[#0a0a0a]/80 backdrop-blur-sm border-b border-[#1a1a1a] z-50">
       <div className="flex items-center justify-between px-8 md:px-12 py-5">
         {/* LOGO */}
-        <Link href="/" className="flex items-center gap-3 no-underline">
-          <span className="text-[#4a90d9] font-bold font-mono text-xl">&lt;/&gt;</span>
-          <span className="text-base md:text-lg font-bold text-white">Mateo Yunga</span>
+        <Link href="/" className="flex items-center gap-3 no-underline group">
+          <Image 
+            src="/img/logo.png" 
+            alt="Mateo Yunga Logo" 
+            width={32}  // Ajusta el tamaño según prefieras
+            height={32} 
+            className="object-contain transition-transform group-hover:scale-110"
+          />
+          <span className="text-base md:text-lg font-bold text-white">
+            Mateo Yunga
+          </span>
         </Link>
 
         {/* DESKTOP LINKS */}
