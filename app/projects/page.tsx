@@ -25,7 +25,7 @@ export default function Projects() {
       description: 'Recreation of the classic PC arcade video game. Implements collision mechanics, map generation, save game system, and control customization.',
       tech: ['Java (Swing)'],
       github: 'https://github.com/Matein0411/BAD_ICE_CREAM',
-      image: '/img/Nivel_1.png'
+      image: '/img/badCream.gif'
     },
     {
       title: 'DarkBit Interactive',
