@@ -6,6 +6,13 @@ export default function Projects() {
 
   const projects = [
     {
+      title: 'Merchant Churn Predictor',
+      description: 'Developed a Machine Learning model to predict merchant attrition for the "De Una" fintech platform. Created for the Interack2hack (USFQ Hackathon).',
+      tech: ['Python', 'Scikit-learn', 'Pandas'],
+      github: 'https://github.com/FernandoHuilca/Interact2hack_DeUna_Reto',
+      image: '/img/DeUna.png'
+    },
+    {
       title: 'Byte_Click',
       description: 'Comprehensive and scalable E-Commerce platform with real-time search, secure payment processing, user authentication, and admin panel.',
       tech: ['Next.js 14', 'Tailwind', 'Firebase', 'Algolia', 'Stripe'],
@@ -32,7 +39,14 @@ export default function Projects() {
       description: 'Immersive 3D interactive horror experience. Developed from scratch with real-time rendering, dynamic lighting, custom shaders, and spatial sound.',
       tech: ['C++', 'OpenGL', 'OpenAL Soft'],
       github: 'https://github.com/Matein0411/2025A_PARALELO_GR1',
-      image: '/img/darkbit.gif' // Asumiendo que has puesto o pondrás un archivo darkbit.gif aquí
+      image: '/img/darkbit.gif' 
+    },
+    {
+      title: 'EconoMe | Financial Systems',
+      description: 'Robust personal finance management platform built with a modern SDLC. Features automated CI/CD pipelines via Azure DevOps, Agile management, and secure transaction metrics.',
+      tech: ['Java 21', 'Jakarta EE', 'Hibernate', 'PostgreSQL', 'Azure'],
+      github: '#',
+      image: '/img/econome.png'
     }
   ];
 
@@ -95,6 +109,14 @@ export default function Projects() {
               </div>
             ))}
           </div>
+
+          {/* MORE PROJECTS OVERLAY */}
+          <div className="mt-16 text-center">
+            <a href="https://github.com/Matein0411" target="_blank" rel="noopener noreferrer" className="text-[#888] hover:text-white text-sm font-semibold tracking-widest uppercase transition-colors inline-flex items-center gap-2 border-b border-transparent hover:border-white pb-1">
+              For more projects, check my GitHub <span className="text-[1rem] leading-none">↗</span>
+            </a>
+          </div>
+
         </div>
       </div>
       <Footer />
