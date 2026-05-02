@@ -46,7 +46,7 @@ export default function Projects() {
       description: 'Robust personal finance management platform built with a modern SDLC. Features automated CI/CD pipelines via Azure DevOps, Agile management, and secure transaction metrics.',
       tech: ['Java 21', 'Jakarta EE', 'Hibernate', 'PostgreSQL', 'Azure'],
       github: '#',
-      image: '/img/econome.png'
+      image: '/img/econome.jpg'
     }
   ];
 
